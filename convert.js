@@ -432,18 +432,18 @@ function show_from(){
         <table>
             <tr>
                 <td><a target="_blank" href="https://airtable.com/account">API Key</a></td>
-                <td><input name="a" type="text" size="30" value="" /></td>
+                <td><input name="a" type="text" size="30" value="${param('a')}" /></td>
             </tr>
             <tr>
                 <td><a target="_blank" href="https://airtable.com/api">Base ID</a></td>
-                <td><input name="b" type="text" size="30" value=""/></td>
+                <td><input name="b" type="text" size="30" value="${param('b')}"/></td>
             </tr>
             <tr>
                 <td colspan=2><input type="submit" name="c" value="Preview"/><br><br></td>
             </tr>
             <tr>
                 <td><a target="_blank" href="https://github.com/settings/tokens">Github token</a></td>
-                <td><input name="t" type="text" size="30" value=""/></td>
+                <td><input name="t" type="text" size="30" value="${param('t')}"/></td>
             </tr>
             <tr>
                 <td colspan=2><input type="submit" name="c" value="Publish"/></td>
@@ -464,7 +464,7 @@ async function publish(data, file_path){
 
     let request_data={
         method:"GET",
-        url: url + "sample3.txt",
+        url: url + file_path,
         headers:{ Authorization: 'token ' + token}
     }
 
@@ -478,18 +478,22 @@ async function publish(data, file_path){
     }
 
     // get the sha or discover that the file not exists
+
+
     try{
         const response = await axios.get(url + file_path,request_headers)
         console.log(request_data)
         request_body.sha=response.data.sha
         console.log("sha",response.data.sha)
     }catch(err){
-        if (err.message.includes("404")){
+        if (err.message.includes("40")){
             // the file requested does not ytet exist on the server
             console.log("404", "file not on server, no need to include its sha")
             
         }
     } 
+
+console.log(request_data)
 
     // update the file
     const response = await axios.put(url+file_path,request_body,request_headers)
