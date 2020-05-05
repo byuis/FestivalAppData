@@ -1,0 +1,26 @@
+{
+    "kind": "blogger#post",
+    "id": "8810672786397712205",
+    "blog": {
+     "id": "1265206039237083708"
+    },
+    "published": "2017-10-13T17:34:00-07:00",
+    "updated": "2017-10-21T19:51:35-07:00",
+    "etag": "\"6YgnukNTybWNqfyQ59zQxEe_LDQ/dGltZXN0YW1wOiAxNTA4NjQwNjk1MTIyCm9mZnNldDogLTI1MjAwMDAwCg\"",
+    "url": "http://chfapp.blogspot.com/2017/10/festival-list.html",
+    "selfLink": "https://www.googleapis.com/blogger/v3/blogs/1265206039237083708/posts/8810672786397712205",
+    "title": "Festival List: used to show list of festival in app",
+    "content": "\u003cpre\u003e{\n  \"festivalGroups\": [\n    {\n      \"name\": \"Colonial Heritage Festival\",\n      \"festivals\": [\n        {\n          \"dates\": \"July 2-4, 2018\",\n          \"apiKey\": \"AIzaSyBNphdpkYTS-VxNIeCQKBng-ep8efJcgpA\",\n          \"blogID\": \"364951287152024711\",\n          \"postID\": \"3825461569436814517\",\n          \"id\": 1\n        },\n        {\n          \"dates\": \"July 1-4, 2017\",\n          \"apiKey\": \"AIzaSyBNphdpkYTS-VxNIeCQKBng-ep8efJcgpA\",\n          \"blogID\": \"1265206039237083708\",\n          \"postID\": \"6389010090886610859\",\n          \"id\": 2\n        }\n      ]\n    },\n    {\n      \"name\": \"Rebels & Redcoats\",\n      \"festivals\": [\n        {\n          \"dates\": \"November 4-6, 2018\",\n          \"apiKey\": \"AIzaSyBNphdpkYTS-VxNIeCQKBng-ep8efJcgpA\",\n          \"blogID\": \"564236773334666064\",\n          \"postID\": \"7492866619606799632\",\n          \"id\": 3\n        }\n      ]\n    }\n  ]\n}\u003c/pre\u003e",
+    "author": {
+     "id": "09047751959913093439",
+     "displayName": "photo manager",
+     "url": "https://www.blogger.com/profile/09047751959913093439",
+     "image": {
+      "url": "//lh3.googleusercontent.com/zFdxGE77vvD2w5xHy6jkVuElKv-U9_9qLkRYK8OnbDeJPtjSZ82UPq5w6hJ-SA=s35"
+     }
+    },
+    "replies": {
+     "totalItems": "0",
+     "selfLink": "https://www.googleapis.com/blogger/v3/blogs/1265206039237083708/posts/8810672786397712205/comments"
+    }
+   }

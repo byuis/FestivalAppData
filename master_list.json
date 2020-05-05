@@ -1,0 +1,32 @@
+{
+    "festivalGroups": [
+      {
+        "name": "Colonial Heritage Festival",
+        "festivals": [
+          {
+            "dates": "July 4-6, 2019 (Orem, Utah)",
+            "icon": "https://4.bp.blogspot.com/-e_tZxVKlR7I/WeIZIeDVkzI/AAAAAAAADW4/CDF3Hl43HmAC26ppNpk90g6ftw4pfD_HQCKgBGAs/s1600/adams_100.png",
+            "url": "https://raw.githubusercontent.com/byuis/FestivalAppData/master/colonialheritage2019.json",
+            "id": 1
+          },
+          {
+            "dates": "July 2-4, 2018 (Orem, Utah)",
+            "icon": "https://4.bp.blogspot.com/-vavjlfyWxMM/WxVe-bwyxZI/AAAAAAAAFew/PFM11mHQSzAR9mDCZBcV8CifawPCk-BVACLcBGAs/s1600/girl_100.jpg",
+            "url": "https://raw.githubusercontent.com/byuis/FestivalAppData/master/colonialheritage2018.json",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "name": "Northwest Colonial Festival",
+        "festivals": [
+          {
+            "dates": "August 6-9, 2020 (Sequim, WA)",
+            "icon": "https://3.bp.blogspot.com/-DTMs92dk3MM/WxgbVHuWi9I/AAAAAAAAFkU/H1CxzmBTFNMXZW1F_I942gfRHd8p1SivgCLcBGAs/s1600/nwcfIcon_100.jpg",
+            "url": "https://raw.githubusercontent.com/byuis/FestivalAppData/master/nwcf/2020.json",
+            "id": 3
+          }
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,17 @@
+{
+    "FestivalSponsors": [
+      {
+        "SponsorType": "Sponsor",  
+        "Sponsors": [
+          {
+            "image": "https://1.bp.blogspot.com/-iYEIJmTec3M/WekLO7Vky6I/AAAAAAAADZQ/WOcpGcPmdD42ZVhpbfJHGQ0oDKloRjd5gCLcBGAs/s320/isaiah_thomas_340.png",
+            "about": "Gove is the president",
+            "name": "Gove Allen",
+            "contact": "photos@colonialheritage.org",
+            "url": "https://www.linkedin.com/in/thegove/"
+          }
+          
+        ]
+      }
+    ]
+  }
