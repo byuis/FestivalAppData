@@ -1,5 +1,4 @@
-const base="http://127.0.0.1:5500"
-//http://127.0.0.1:5500/system/admin.html?a=keybjicCPz1uh4l6C&b=apptTLyjlZBF2tZVZ
+const base="https://byuis.github.io/FestivalAppData"
 async function sumbit_form(){
     let key=document.getElementById("key").value
     let table = "person"
