@@ -4,9 +4,9 @@
         "name": "Colonial Heritage Festival",
         "festivals": [
           {
-            "dates": "July 4-6, 2019 (Orem, Utah)",
+            "dates": "July 2-5, 2021 (Orem, Utah)",
             "icon": "https://4.bp.blogspot.com/-e_tZxVKlR7I/WeIZIeDVkzI/AAAAAAAADW4/CDF3Hl43HmAC26ppNpk90g6ftw4pfD_HQCKgBGAs/s1600/adams_100.png",
-            "url": "https://raw.githubusercontent.com/byuis/FestivalAppData/master/colonialheritage2019.json",
+            "url": "https://raw.githubusercontent.com/byuis/FestivalAppData/master/chf/2021.json",
             "id": 1
           },
           {

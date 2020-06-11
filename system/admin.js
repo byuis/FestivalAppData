@@ -1,7 +1,4 @@
-let token
-let base_id
-let errors=[]
-let destination
+const base="http://127.0.0.1:5500"
 //http://127.0.0.1:5500/system/admin.html?a=keybjicCPz1uh4l6C&b=apptTLyjlZBF2tZVZ
 async function sumbit_form(){
     let key=document.getElementById("key").value
@@ -24,7 +21,7 @@ async function sumbit_form(){
             if(!name){
                 name=record.fields.firstName+" "+record.fields.lastName
             }
-            lines.push('<tr><td><a target="edit" href="https://">' + name + '</a></td><td>'+record.fields.oneLiner+'</td></tr>')
+            lines.push('<tr><td><a target="edit" href="' + base + '/system/edit.html?a='+btoa(record.id.substr(3)+'_'+key+'_'+table)+'">' + name + '</a></td><td>'+record.fields.oneLiner+'</td></tr>')
         }
         lines.push("</table>")
 
@@ -82,10 +79,10 @@ function param(name) {
 function show_from(){
     console.log("param",param("a"))
     document.getElementById("output").innerHTML =   `
-    <h1>Show Data</h1>
+    <h1>Admin Tools</h1>
     <form id="form" onsubmit="return false">
       <label id="icon" for="key"><i class="fas fa-key"></i></label>
-      <input type="text" name="key" id="key" placeholder="Key" required value="`+param("a")+`"/>
+      <input type="text" name="key" id="key" placeholder="Key" value="`+param("a")+`"/>
 
       <div class="gender">
       <input type="radio" value="person" id="person" name="table" checked/>
@@ -95,7 +92,18 @@ function show_from(){
       </div>
 
       <div class="btn-block">
-        <button onclick=sumbit_form()>Build Links</button>
+      <button title="Build links to send to individuals to let them edit thier own data." onclick="sumbit_form()">Build Edit-Data Links</button>
+      <hr>
+      <button onclick="preview()" title="Preview data from Airtable as structured for the Franklin Event Guide.">Preview App Data</button>
+      <label id="icon" for="git"><i class="fas fa-code-branch"></i></label>
+      <input type="text" name="git" id="git" placeholder="Key for Git-Hub" value="`+param("t")+`"/>
+
+      <button onclick="publish()" title="Publish data from Airtable to Franklin Event Guide." >Publish App Data</button>
+        <hr>
+      <button onclick="buildLink()" title="Supply a github token along with Airtble API Key and Base ID to build a shareable link" >Build Custom Link</button>
+
+
+      
       </div>
       <div id="message" class="message">
         
@@ -113,4 +121,28 @@ function start_me_up(){
         default:
             show_from()
     }
+}
+
+function publish(){
+    window.location.href = 'convert.html?a=key'+reverseString(document.getElementById("key").value.split("_")[0])+'&b=app'+reverseString(document.getElementById("key").value.split("_")[1])+'&c=Publish&t=' + document.getElementById("git").value ;
+}
+function buildLink(){
+    var api_key = prompt("Enter your Airtable API Key.  Found at airtable.com/account");
+    if(!api_key){return}
+    var base_id = prompt("Enter your Airtable Base ID.  Found at airtable.com/api");
+    if(!base_id){return}
+    var github = prompt("Enter your github personal access token (optional).  Found at https://github.com/settings/tokens/");
+    if(github){
+        window.location.href = 'admin.html?a='+reverseString(api_key.substr(3))+'_'+reverseString(base_id.substr(3))+'&t=' + github
+    }else{
+        window.location.href = 'admin.html?a='+reverseString(api_key.substr(3))+'_'+reverseString(base_id.substr(3))
+    }
+}
+function preview(){
+    window.location.href = 'convert.html?a=key'+reverseString(document.getElementById("key").value.split("_")[0])+'&b=app'+reverseString(document.getElementById("key").value.split("_")[1])+'&c=Preview' ;
+}
+
+
+function reverseString(str) {
+    return str.split("").reverse().join("")
 }

@@ -2,7 +2,7 @@ html, body {
     justify-content: center;
     height: 100%;
     }
-    body, div, h1, form, input, p { 
+    body, div, h1, form, input, p, textarea, select, a { 
     padding: 0;
     margin: 0;
     outline: none;
@@ -25,6 +25,7 @@ html, body {
     }
     .container {
         width:100%;
+        
         text-align: center;
         padding-left: 1rem;
         padding-right: 1rem;
@@ -94,16 +95,38 @@ html, body {
     input[type=radio]:checked + label:after {
     opacity: 1;
     }
-    input[type=text], input[type=password], select {
-    width: calc(100% - 57px);
-    height: 36px;
-    margin: 13px 0 0 -5px;
-    padding-left: 10px; 
-    border-radius: 0 5px 5px 0;
-    border: solid 1px #cbc9c9; 
-    box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
-    background: #fff; 
-  
+
+    textarea{
+        width: calc(100% - 24px);
+        height: 140px;
+        margin: 13px 0 0 0;
+        padding: 10px; 
+        border-radius: 5px;
+        border: solid 1px #cbc9c9; 
+        box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+        background: #fff; 
+    }
+    select {
+        width: calc(100% - 52px);
+        height: 39px;
+        margin: 13px 0 0 -5px;
+        padding-left: 10px; 
+        border-radius: 0 5px 5px 0;
+        border: solid 1px #cbc9c9; 
+        box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+        background: #fff; 
+      
+    }
+    
+    input[type=text], input[type=password]{
+        width: calc(100% - 57px);
+        height: 36px;
+        margin: 13px 0 0 -5px;
+        padding-left: 10px; 
+        border-radius: 0 5px 5px 0;
+        border: solid 1px #cbc9c9; 
+        box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+        background: #fff;   
     }
     input[type=password] {
     margin-bottom: 15px;
@@ -157,3 +180,16 @@ html, body {
         background-color: #4CAF50;
         color: white;
       }
+    .person{
+        cursor:pointer;
+    }  
+    #photo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;  
+    }
+
+    .photo{
+        margin-left:2rem;
+        font-size: x-large;
+    }

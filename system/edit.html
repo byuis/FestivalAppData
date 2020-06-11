@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Authroize</title>
+    <title>Edit</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-  </head>
-  <body>
-    <div class="main-block">
-      <h1>Edit Record</h1>
-      <form action="https://script.google.com/macros/s/AKfycbyQzFFPgzU_Qc_brWj55o_y36dFZOYYzNFdGI2YmE8Kz5unizU/exec" method="POST">
-        <label id="icon" for="key"><i class="fas fa-key"></i></label>
-        <input type="text" name="key" id="key" placeholder="Key" required/>
-        <div class="btn-block">
-          <button type="submit" href="/">Submit</button>
-        </div>
-      </form>
-    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <script src="edit.js"></script>
+    </head>
+    <body onLoad="start_me_up()">
+      <div id="container" class="container" style="display:flex;">
+        <div id="output" class="main-block" style="width: 400px;"></div><br>
+        <div id="photos" class="main-block" style="width: 400px;"></div><br>
+      </div>
   </body>
-</html>
+  </html>
+
