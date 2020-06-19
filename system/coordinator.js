@@ -78,7 +78,11 @@ function param(name) {
 function show_from(){
     console.log("param",param("a"))
     document.getElementById("output").innerHTML =   `
-    <h1>Admin Tools</h1>
+    <h1>Event Coordinator Tools</h1>
+    <div class="links">
+    <a target="franklin" href="http://app.colonialheritage.org">Franklin Guide Online</a><br />
+    <a target="airtable" href="https://airtable.com">Airtable.com</a><br />
+    </div>
     <form id="form" onsubmit="return false">
       <label id="icon" for="key"><i class="fas fa-key"></i></label>
       <input type="text" name="key" id="key" placeholder="Key" value="`+param("a")+`"/>
