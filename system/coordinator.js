@@ -90,6 +90,8 @@ function show_from(){
     </li><li>
     <a target="airtable" href="https://airtable.com/account">Your Airtable Key</a><br />
     </li><li>
+    <a target="airtable" href="https://www.google.com/">Get Latitude & longitude</a><br />
+    </li><li>
     <a target="airtable" href="https://airtable.com/account">Training Video</a><br />
     </li></ul>
     </div>

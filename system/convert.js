@@ -306,6 +306,7 @@ function get_event(air_data){
     // takes in the airtable data, first-level child name, and record number, and attribute list, returns an object with the values for the attributes specifeid
     const data = copy_attributes(air_data["Event"].records[0].fields,  ['name', 'dates','about','oneLiner','url','location','fbsocial','gsocial','tsocial','contactUs','emailForm','donateLink','donateText','listIn App','organizers'])
     data.image=get_image(air_data["Event"].records[0].fields, "image")
+    data.donateImage=get_image(air_data["Event"].records[0].fields, "donateImage")
     data.listImage=get_image(air_data["Event"].records[0].fields, "listImage")
     get_people(air_data, data.organizers)
     return data
