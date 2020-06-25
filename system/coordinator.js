@@ -2,8 +2,10 @@ const base="https://byuis.github.io/FestivalAppData"
 async function sumbit_form(){
     let key=document.getElementById("key").value
     let table = "person"
+    let label = "People"
     if(document.getElementById("exhibition").checked){
-        table="exhibition"
+        table = "exhibition"
+        label = "Exhibits and Presentations"
     }
     console.log(table)
     if(!key){
@@ -13,7 +15,7 @@ async function sumbit_form(){
         const data = await get_data(table, key)
         console.log(data)
         document.getElementById("message").innerHTML = ""
-        const lines=[]
+        const lines=["<br><h2>" + label + "</h2>"]
         lines.push('<table>')
         for(const record of data.records){
             let name=record.fields.name
@@ -87,6 +89,8 @@ function show_from(){
     <a target="airtable" href="https://airtable.com/api">Airtable API</a><br />
     </li><li>
     <a target="airtable" href="https://airtable.com/account">Your Airtable Key</a><br />
+    </li><li>
+    <a target="airtable" href="https://airtable.com/account">Training Video</a><br />
     </li></ul>
     </div>
     <form id="form" onsubmit="return false">

@@ -199,8 +199,9 @@ async function show_from(){
         if(person.records[0].fields.email){document.getElementById("email").value=person.records[0].fields.email}
         if(person.records[0].fields.phone){document.getElementById("phone").value=person.records[0].fields.phone}
         if(person.records[0].fields.kind){document.getElementById(person.records[0].fields.kind.toLowerCase().split(" ")[0]).checked=true}
-        if(document.getElementById("real").checked){document.getElementById('portrayed').style.display = 'none'}
 
+                                                    
+        console.log('document.getElementById("portrayed")',document.getElementById('portrayed'))
         document.getElementById("message").innerHTML = "Getting People . . ."
 
         // get list of real people to populate "portrayed by" drop down
@@ -221,6 +222,10 @@ async function show_from(){
                 document.getElementById('portrayed_by').value=actor_id
                 change_protrayed_by()        
             }
+        }
+
+        if(document.getElementById("real").checked){
+            document.getElementById('portrayed').style.display = 'none'
         }
 
         //get photo links    
