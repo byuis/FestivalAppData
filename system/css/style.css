@@ -33,7 +33,7 @@ html, body {
 
     .links {
         width:100%;
-        text-align: center;
+        padding-left: 3rem;
     }
 
     .data-block {

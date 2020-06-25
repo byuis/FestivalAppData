@@ -12,7 +12,7 @@
           {
             "dates": "July 2-4, 2018 (Orem, Utah)",
             "icon": "https://4.bp.blogspot.com/-vavjlfyWxMM/WxVe-bwyxZI/AAAAAAAAFew/PFM11mHQSzAR9mDCZBcV8CifawPCk-BVACLcBGAs/s1600/girl_100.jpg",
-            "url": "https://raw.githubusercontent.com/byuis/FestivalAppData/master/colonialheritage2018.json",
+            "url": "https://raw.githubusercontent.com/byuis/FestivalAppData/master/chf/2018.json",
             "id": 1
           }
         ]
@@ -24,6 +24,45 @@
             "dates": "August 6-9, 2020 (Sequim, WA)",
             "icon": "https://3.bp.blogspot.com/-DTMs92dk3MM/WxgbVHuWi9I/AAAAAAAAFkU/H1CxzmBTFNMXZW1F_I942gfRHd8p1SivgCLcBGAs/s1600/nwcfIcon_100.jpg",
             "url": "https://raw.githubusercontent.com/byuis/FestivalAppData/master/nwcf/2020.json",
+            "id": 3
+          }
+        ]
+      },
+      {
+        "name": "Rebels and Redcoats",
+        "festivals": [
+          {
+            "dates": "August 6-8, 2020 (Anthem, AZ)",
+            "icon": "https://1.bp.blogspot.com/-WLQegRfjJYk/XvUTogku9gI/AAAAAAAAkys/zTeioIRJ-U8ctA_4r3ywSloky75EPfJQQCK4BGAsYHg/redmayne.png",
+            "url": "https://raw.githubusercontent.com/byuis/FestivalAppData/master/rr/2020.json",
+            "id": 3
+          }
+        ]
+
+
+      },
+
+      {
+        "name": "Freedom's Light",
+        "festivals": [
+          {
+            "dates": "September 17-19, 2020 (Bountiful, UT)",
+            "icon": "https://1.bp.blogspot.com/-F0iR3Y_7TsY/XvUU54pfDHI/AAAAAAAAkzI/a4ybtoUJJZIL_QvSXbRM1vm2p6PNTXYuACK4BGAsYHg/ross.png",
+            "url": "https://raw.githubusercontent.com/byuis/FestivalAppData/master/fl/2020.json",
+            "id": 3
+          }
+        ]
+
+
+      },
+
+      {
+        "name": "American Heritage Festival",
+        "festivals": [
+          {
+            "dates": "October 6-9, 2021 (Rocklin, CA)",
+            "icon": "https://1.bp.blogspot.com/-71YLQTr60OU/XvUV_oS0r7I/AAAAAAAAkzw/-dXVwRNScO8ikAsQTo2fmOdnjZzJNr2ZACK4BGAsYHg/color.png",
+            "url": "https://raw.githubusercontent.com/byuis/FestivalAppData/master/ahf/2021.json",
             "id": 3
           }
         ]

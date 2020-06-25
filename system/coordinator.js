@@ -79,9 +79,15 @@ function show_from(){
     console.log("param",param("a"))
     document.getElementById("output").innerHTML =   `
     <h1>Event Coordinator Tools</h1>
-    <div class="links">
+    <div class="links"><ul><li>
     <a target="franklin" href="http://app.colonialheritage.org">Franklin Guide Online</a><br />
+    </li><li>
     <a target="airtable" href="https://airtable.com">Airtable.com</a><br />
+    </li><li>
+    <a target="airtable" href="https://airtable.com/api">Airtable API</a><br />
+    </li><li>
+    <a target="airtable" href="https://airtable.com/account">Your Airtable Key</a><br />
+    </li></ul>
     </div>
     <form id="form" onsubmit="return false">
       <label id="icon" for="key"><i class="fas fa-key"></i></label>
