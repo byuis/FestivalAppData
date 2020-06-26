@@ -88,7 +88,7 @@ function show_from(){
     </li><li>
     <a target="airtable" href="https://airtable.com/account">Your Airtable Key</a><br />
     </li><li>
-    <a target="airtable" href="https://www.google.com/">Get Latitude & longitude</a><br />
+    <a target="airtable" href="https://maps.google.com/">Get Latitude & longitude</a><br />
     </li><li>
     <a target="airtable" href="https://ionicons.com/v4/">Page Icons</a><br />
     </li><li>
