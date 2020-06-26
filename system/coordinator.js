@@ -92,7 +92,7 @@ function show_from(){
     </li><li>
     <a target="airtable" href="https://ionicons.com/v4/">Page Icons</a><br />
     </li><li>
-    <a target="airtable" href="https://airtable.com/account">Training Video</a><br />
+    <a target="airtable" href="https://youtu.be/lxr_boa5AtM">Training Video</a><br />
     </li></ul>
     </div>
     <form id="form" onsubmit="return false">
