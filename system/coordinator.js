@@ -88,11 +88,11 @@ function show_from(){
     </li><li>
     <a target="airtable" href="https://airtable.com/account">Your Airtable Key</a><br />
     </li><li>
-    <a target="airtable" href="https://maps.google.com/">Get Latitude & longitude</a><br />
+    <a target="pams" href="https://maps.google.com/">Get Latitude & longitude</a><br />
     </li><li>
-    <a target="airtable" href="https://ionicons.com/v4/">Page Icons</a><br />
+    <a target="icons" href="https://ionicons.com/v4/">Page Icons</a><br />
     </li><li>
-    <a target="airtable" href="https://youtu.be/lxr_boa5AtM">Training Video</a><br />
+    <a target="youtube" href="https://youtu.be/lxr_boa5AtM">Training Video</a><br />
     </li></ul>
     </div>
     <form id="form" onsubmit="return false">
