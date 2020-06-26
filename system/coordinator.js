@@ -84,13 +84,13 @@ function show_from(){
     <div class="links"><ul><li>
     <a target="franklin" href="http://app.colonialheritage.org">Franklin Guide Online</a><br />
     </li><li>
-    <a target="airtable" href="https://airtable.com">Airtable.com</a><br />
-    </li><li>
-    <a target="airtable" href="https://airtable.com/api">Airtable API</a><br />
+    <a target="airtable" href="https://airtable.com/invite/r/MN8DLT6q">Signup for Airtable</a><br />
     </li><li>
     <a target="airtable" href="https://airtable.com/account">Your Airtable Key</a><br />
     </li><li>
     <a target="airtable" href="https://www.google.com/">Get Latitude & longitude</a><br />
+    </li><li>
+    <a target="airtable" href="https://ionicons.com/v4/">Page Icons</a><br />
     </li><li>
     <a target="airtable" href="https://airtable.com/account">Training Video</a><br />
     </li></ul>
