@@ -1,5 +1,13 @@
-const base="https://127.0.0.1:5500"
-//http://127.0.0.1:5500/system/admin.html?a=keybjicCPz1uh4l6C&b=apptTLyjlZBF2tZVZ
+// local
+//const base = "https://127.0.0.1:5500"
+
+//dev
+const base = "https://script.google.com/macros/s/AKfycbwssHJi8n6W5tjXMRxOyHHY2o3Ya2cTZK8OLCEhBEvf/dev"
+
+//production
+//const base = "https://script.google.com/macros/s/AKfycbw2KAFCjQzBLKKl9EWjd9xLP7bRytQ6J-6Nt9uxGk0ZghMoIQW4QCbwfg/exec"
+
+
 async function sumbit_form(){
     let message=""
     try{
@@ -73,15 +81,17 @@ function get_radio_value(radio_name) {
 }
 
 
-async function get_data(table, key,record_id,  filter){
+async function get_data(key,record_id,filter){
     let record_limit=5000
     let offset=""
     view_clause=""
     
     // data_router_2 owned by gove.allen
-    let url="https://script.google.com/macros/s/AKfycbyQzFFPgzU_Qc_brWj55o_y36dFZOYYzNFdGI2YmE8Kz5unizU/exec?a=" + key + "&t=" + table 
+    
+    let url=base + "?key=" + key
+
     if(record_id){
-        url += "&r=" + record_id
+        url += "&id=" + record_id
     }else if(filter){
         url += "&f=" + encodeURIComponent(filter)
     }
@@ -161,8 +171,23 @@ async function show_form(){
     <div id="Persona" style="margin-left:20px">
     <a href=>
     </div>
-
     `
+
+    // get the data
+    document.getElementById("message").innerHTML = "Requesting data . . ."
+    
+    // get data of person to be edited
+    let participant = await get_data(param("key"), param("id"))
+    document.getElementById("message").innerHTML = "Complete."
+
+    if(participant.records[0].fields.firstName){document.getElementById("firstName").value=participant.records[0].fields.firstName}
+    if(participant.records[0].fields.lastName){document.getElementById("lastName").value=participant.records[0].fields.lastName}
+    if(participant.records[0].fields.oneLiner){document.getElementById("oneLiner").value=participant.records[0].fields.oneLiner}
+    if(participant.records[0].fields.about){document.getElementById("about").value=participant.records[0].fields.about}
+    if(participant.records[0].fields.email){document.getElementById("email").value=participant.records[0].fields.email}
+    if(participant.records[0].fields.phone){document.getElementById("phone").value=participant.records[0].fields.phone}
+    if(participant.records[0].fields.kind){document.getElementById(participant.records[0].fields.kind.toLowerCase().split(" ")[0]).checked=true}
+
 }
 function change_protrayed_by(){
     const sel = document.getElementById("portrayed_by")
