@@ -1,11 +1,12 @@
 // local
-//const base = "https://127.0.0.1:5500"
+//const base = "https://127.0.0.1:5500" // local
 
 //dev
-const base = "https://script.google.com/macros/s/AKfycbwssHJi8n6W5tjXMRxOyHHY2o3Ya2cTZK8OLCEhBEvf/dev"
+//const base = "https://script.google.com/macros/s/AKfycbwssHJi8n6W5tjXMRxOyHHY2o3Ya2cTZK8OLCEhBEvf/dev"
 
 //production
-//const base = "https://script.google.com/macros/s/AKfycbw2KAFCjQzBLKKl9EWjd9xLP7bRytQ6J-6Nt9uxGk0ZghMoIQW4QCbwfg/exec"
+
+const base = "https://script.google.com/macros/s/AKfycbw2KAFCjQzBLKKl9EWjd9xLP7bRytQ6J-6Nt9uxGk0ZghMoIQW4QCbwfg/exec"
 
 
 async function sumbit_form(){
