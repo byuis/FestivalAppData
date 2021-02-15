@@ -180,7 +180,7 @@ async function show_form(){
     // get data of person to be edited
     let participant = await get_data(param("key"), param("id"))
     document.getElementById("message").innerHTML = "Complete."
-
+    console.log("participant",participant)
     if(participant.records[0].fields.firstName){document.getElementById("firstName").value=participant.records[0].fields.firstName}
     if(participant.records[0].fields.lastName){document.getElementById("lastName").value=participant.records[0].fields.lastName}
     if(participant.records[0].fields.oneLiner){document.getElementById("oneLiner").value=participant.records[0].fields.oneLiner}
