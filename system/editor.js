@@ -135,7 +135,7 @@ function param(name) {
 
 async function show_form(){
     document.getElementById("personal").innerHTML =   `
-    <h1>Edit Personal Information</h1>
+    <h1>Edit Individual Information</h1>
     <div class="data-text">
     This data is only for use by event coordinators.  It will not show in the app or online.
     </div>
