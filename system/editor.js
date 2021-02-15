@@ -124,7 +124,10 @@ function param(name) {
 
 async function show_form(){
     document.getElementById("output").innerHTML =   `
-    <h1>Edit Person</h1>
+    <h1>Edit Personal Information</h1>
+    <div class="data-text">
+    This data is only for use by event coordinators.  It will not show in the app or online.
+    </div>
     <form id="form" onsubmit="return false">
 
     <label id="icon" for="firstName"><i class="fas fa-user"></i></label>
@@ -133,35 +136,17 @@ async function show_form(){
     <label id="icon" for="lastName"><i class="fas fa-user"></i></label>
     <input type="text" name="lastName" id="lastName" placeholder="Last Name" required/>
 
-    <label id="icon" for="oneLiner"><i class="fas fa-quote-right"></i></label>
-    <input type="text" name="oneLiner" id="oneLiner" placeholder="Short Description" required/>
-
-    <textarea name="about" id="about" placeholder="About"></textarea>
-
-    <div class="gender">
-    <input type="radio" value="Historic" id="historic" name="kind"  onclick="document.getElementById('portrayed').style.display = 'block'"/>
-    <label for="historic" class="radio">Historic</label><br />
-    <input type="radio" value="Fictional" id="fictional" name="kind"  onclick="document.getElementById('portrayed').style.display = 'block'"/>
-    <label for="fictional" class="radio">Fictional</label><br />
-    <input type="radio" value="Real Identities" id="real" name="kind" onclick="document.getElementById('portrayed').style.display = 'none'"/>
-    <label for="real" class="radio">Real Identity</label>
-    </div>
-
-    <div id="portrayed" style="display:none">
-    <label id="icon" for="portrayed_by"><i class="fas fa-mask"></i></label>
-    <select name="portrayed_by" id="portrayed_by" placeholder="Portrayed By" onchange="change_protrayed_by()">
-    <option value="">Portrayed By</option>
-    </select>
-    <ul id="portray_list" class="person">
-    </ul>
-    </div>
-
     <label id="icon" for="email"><i class="fas fa-envelope"></i></label>
-    <input type="text" name="email" id="email" placeholder="Email Address" />
+    <input type="text" name="email" id="email" placeholder="Email Address"/>
 
     <label id="icon" for="phone"><i class="fas fa-phone"></i></label>
-    <input type="text" name="phone" id="phone" placeholder="Phone Number" />
+    <input type="text" name="phone" id="phone" placeholder="Phone Number"/>
 
+    <label id="icon" for="address"><i class="fas fa-home"></i></label>
+    <input type="text" name="address" id="address" placeholder="Street Address"/>
+    <input type="text" name="city" id="city" placeholder="City" style="width:133px; border-radius:5px;margin-left:50px"/>
+    <input type="text" name="state" id="state" placeholder="State" style="width:40px; border-radius:5px;margin-left:5px"/>
+    <input type="text" name="zip" id="zip" placeholder="ZIP" style="width:60px; border-radius:5px;margin-left:5px"/>
 
     <div class="btn-block">
         <button onclick=sumbit_form()>Update</button>
@@ -169,6 +154,9 @@ async function show_form(){
     <div id="message" class="message">
     </div><br>
     </form>
+    <div id="Persona" style="margin-left:20px">
+    Hi there
+    </div>
     `
 }
 function change_protrayed_by(){

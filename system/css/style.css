@@ -41,6 +41,11 @@ html, body {
         margin: 0 auto;
         text-align: left;
     }
+    .data-text {
+        display:inline-block;
+        margin: 0px 20px;
+        text-align: left;
+    }
     .main-block {
         text-align: left;
         display:inline-block;
@@ -124,7 +129,7 @@ html, body {
     }
     
     input[type=text], input[type=password]{
-        width: calc(100% - 57px);
+        width: calc(100% - 60px);
         height: 36px;
         margin: 13px 0 0 -5px;
         padding-left: 10px; 
