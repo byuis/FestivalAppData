@@ -123,7 +123,7 @@ function param(name) {
 
 
 async function show_form(){
-    document.getElementById("output").innerHTML =   `
+    document.getElementById("personal").innerHTML =   `
     <h1>Edit Personal Information</h1>
     <div class="data-text">
     This data is only for use by event coordinators.  It will not show in the app or online.
@@ -154,9 +154,14 @@ async function show_form(){
     <div id="message" class="message">
     </div><br>
     </form>
-    <div id="Persona" style="margin-left:20px">
-    Hi there
+    <h1>Edit Event Information</h1>
+    <div class="data-text">
+    This infomation will be available in the event app and website.  If you need access to other people or exhibits, send a request to the event coordinator.
     </div>
+    <div id="Persona" style="margin-left:20px">
+    <a href=>
+    </div>
+
     `
 }
 function change_protrayed_by(){
