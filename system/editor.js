@@ -336,9 +336,6 @@ async function show_exhibition(key, id){
     <div id="message" class="message">
     </div><br>
     </form>
-    `
-    document.getElementById("photos").style.display="inline-block"
-    document.getElementById("photos").innerHTML =   `
     <h1>Image</h1>
     <img src="images/noimage.png" id="photo">
     <div id="review-photos">
