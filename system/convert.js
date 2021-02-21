@@ -180,7 +180,7 @@ function get_time(d, delay){
     the_date.setMinutes(the_date.getMinutes()+(delay ? delay :0))
     let hour=the_date.getHours()
     let ampm="am"
-    if (hour>11){ampm=pm}
+    if (hour>11){ampm="pm"}
     if (hour>12){hour=hour-12}
     return hour + ":" +
            ("0" + (the_date.getMinutes()).toString()).slice(-2) + " " + ampm
