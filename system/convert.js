@@ -488,10 +488,13 @@ async function publish(data, file_path){
         console.log("sha",response.data.sha)
     }catch(err){
         if (err.message.includes("40")){
-            // the file requested does not ytet exist on the server
+            // the file requested does not yet exist on the server
             console.log("404", "file not on server, no need to include its sha")
-            
+            delete request_body.sha
+        }else{
+            console.log("Error",err)
         }
+        
     } 
 
 console.log(request_data)
