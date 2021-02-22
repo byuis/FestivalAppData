@@ -46,6 +46,7 @@ function build_festival_data(air_data){
   if(destination==="Preview"){
     document.getElementById("output").innerHTML = "<pre>" + JSON.stringify(app_data,"",4) + "</pre>"
   }else{
+    console.log("about to publish 1")
     publish(JSON.stringify(app_data), air_data.Event.records[0].fields.data_path)
   }
 }
@@ -480,7 +481,7 @@ async function publish(data, file_path){
 
     // get the sha or discover that the file not exists
 
-
+    console.log("about to contact github",url, file_path,request_headers)
     try{
         const response = await axios.get(url + file_path,request_headers)
         console.log(request_data)
@@ -519,6 +520,8 @@ function start_me_up(){
             convert("Preview")
             break
         case "Publish":
+            console.log("about to publish 2")
+
             convert("Publish")
             break
         default:
