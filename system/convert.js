@@ -177,7 +177,9 @@ function get_day(d){
            ("0" + (the_date.getDate()).toString()).slice(-2)
 }
 function get_time(d, delay){
-    var the_date = new Date(d)
+    console.log("at get_time. d:0",d)
+    var the_date = new Date(d.replace(".000Z",""))
+    console.log("the_date",the_date)
     the_date.setMinutes(the_date.getMinutes()+(delay ? delay :0))
     let hour=the_date.getHours()
     let ampm="am"
