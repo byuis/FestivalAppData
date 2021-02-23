@@ -10,10 +10,16 @@
             "id": 1
           },
           {
+            "dates": "July 2-5, 2019 (Orem, Utah)",
+            "icon": "https://4.bp.blogspot.com/-e_tZxVKlR7I/WeIZIeDVkzI/AAAAAAAADW4/CDF3Hl43HmAC26ppNpk90g6ftw4pfD_HQCKgBGAs/s1600/adams_100.png",
+            "url": "https://raw.githubusercontent.com/byuis/FestivalAppData/master/chf/2019.json",
+            "id": 2
+          },
+          {
             "dates": "July 2-4, 2018 (Orem, Utah)",
             "icon": "https://4.bp.blogspot.com/-vavjlfyWxMM/WxVe-bwyxZI/AAAAAAAAFew/PFM11mHQSzAR9mDCZBcV8CifawPCk-BVACLcBGAs/s1600/girl_100.jpg",
             "url": "https://raw.githubusercontent.com/byuis/FestivalAppData/master/chf/2018.json",
-            "id": 1
+            "id": 13
           }
         ]
       },
