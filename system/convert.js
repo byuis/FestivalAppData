@@ -45,7 +45,10 @@ function build_festival_data(air_data){
 
   if(destination==="Preview"){
     document.getElementById("output").innerHTML = "<pre>" + JSON.stringify(app_data,"",4) + "</pre>"
-  }else{
+}else if(destination==="Publish_All"){
+    console.log("about to publish all, really")
+    publish(JSON.stringify(app_data), "current_festival.json")
+}else{
     console.log("about to publish 1")
     publish(JSON.stringify(app_data), air_data.Event.records[0].fields.data_path)
   }
@@ -525,6 +528,11 @@ function start_me_up(){
             console.log("about to publish 2")
 
             convert("Publish")
+            break
+        case "Publish_All":
+            console.log("about to publish all")
+
+            convert("Publish_All")
             break
         default:
             show_from()

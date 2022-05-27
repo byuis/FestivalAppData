@@ -6,15 +6,30 @@
     <title>Make Links</title>
     <script>
         function build_links(){
+            const urlparts=window.location.href.split("/")
             const link=[]
-            link.push(window.location.origin)
-            console.log("building links", window.location)
+            const html=["<br><br>Link to edit Airtable only:<br>"]
+            link.push(window.location.href.substring(0,window.location.href.length-urlparts[urlparts.length-1].length))
+            link.push("coordinator.html?a=")
+            link.push((tag("apikey").value.substring(3).split("").reverse().join("")+"_"+tag("baseid").value.substring(3).split("").reverse().join("")))
+            html.push(link.join(""))
+            html.push("<br><br>Link to edit Airtable and publish app data:<br>")
+            link.push("&t=" + tag("token").value)
+            html.push(link.join(""))
+            html.push("<br><br>Link to edit Airtable and publish app data and allow Settting of Default Data:<br>")
+            link.push("&d=w34r9iu")
+            html.push(link.join(""))
+            tag("output").innerHTML=html.join("")
+            console.log("building links", link.join(""))
+        }
+        function tag(id){
+            return document.getElementById(id)
         }
     </script>
 </head>
 <body>
     <div>
-        Airtable Base ID: <input id="baseid" size="30"><br>
+        Airtable Base ID: <input id="baseid" size="30" value="appZRSGHWvqF0aljB"><br>
         Airtable API Key: <input id="apikey" size="30"><br>
         Github Personal Access Token: <input id="token" size="30"><br>
         <button onclick="build_links()">Build Link</button>

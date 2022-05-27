@@ -79,7 +79,8 @@ function param(name) {
 
 function show_from(){
     console.log("param",param("a"))
-    document.getElementById("output").innerHTML =   `
+    const html=[]
+    html.push(`
     <h1>Event Coordinator Tools</h1>
     <div class="links"><ul><li>
     <a target="franklin" href="http://app.colonialheritage.org">Franklin Guide Online</a><br />
@@ -114,15 +115,20 @@ function show_from(){
       <input type="text" name="git" id="git" placeholder="Key for Git-Hub" value="`+param("t")+`"/>
 
       <button onclick="publish()" title="Publish data from Airtable to Franklin Event Guide." >Publish App Data</button>
-
-
+      `)
       
+      if(param("d")==='w34r9iu'){
+        html.push('<button onclick="publish_all()" title="Publish To Default Festival.  Only use this if you know what you are doing." >Set as Default Festival</button>')
+      }
+
+      html.push(`
       </div>
       <div id="message" class="message">
         
       </div>
     </form>
-    `
+    `)
+    document.getElementById("output").innerHTML = html.join("")
 }
 
 
@@ -133,11 +139,15 @@ function start_me_up(){
             break
         default:
             show_from()
+            
     }
 }
 
 function publish(){
     window.location.href = 'convert.html?a=key'+reverseString(document.getElementById("key").value.split("_")[0])+'&b=app'+reverseString(document.getElementById("key").value.split("_")[1])+'&c=Publish&t=' + document.getElementById("git").value ;
+}
+function publish_all(){
+    window.location.href = 'convert.html?a=key'+reverseString(document.getElementById("key").value.split("_")[0])+'&b=app'+reverseString(document.getElementById("key").value.split("_")[1])+'&c=Publish_All&t=' + document.getElementById("git").value ;
 }
 function preview(){
     window.location.href = 'convert.html?a=key'+reverseString(document.getElementById("key").value.split("_")[0])+'&b=app'+reverseString(document.getElementById("key").value.split("_")[1])+'&c=Preview' ;
