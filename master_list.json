@@ -27,9 +27,9 @@
         "name": "Northwest Colonial Festival",
         "festivals": [
           {
-            "dates": "August 6-9, 2020 (Sequim, WA)",
+            "dates": "August 11-14, 2022 (Sequim, WA)",
             "icon": "https://3.bp.blogspot.com/-DTMs92dk3MM/WxgbVHuWi9I/AAAAAAAAFkU/H1CxzmBTFNMXZW1F_I942gfRHd8p1SivgCLcBGAs/s1600/nwcfIcon_100.jpg",
-            "url": "https://raw.githubusercontent.com/byuis/FestivalAppData/master/nwcf/2020.json",
+            "url": "https://raw.githubusercontent.com/byuis/FestivalAppData/master/nwcf/2022.json",
             "id": 3
           }
         ]
