@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Links</title>
+    <script>
+        function build_links(){
+            const link=[]
+            link.push(window.location.origin)
+            console.log("building links", window.location)
+        }
+    </script>
+</head>
+<body>
+    <div>
+        Airtable Base ID: <input id="baseid" size="30"><br>
+        Airtable API Key: <input id="apikey" size="30"><br>
+        Github Personal Access Token: <input id="token" size="30"><br>
+        <button onclick="build_links()">Build Link</button>
+    </div>
+    <div id="output">
+        
+    </div>
+</body>
+</html>

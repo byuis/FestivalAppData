@@ -500,7 +500,7 @@ async function publish(data, file_path){
         
     } 
 
-console.log(request_data)
+console.log("request_data",request_data)
 
     // update the file
     const response = await axios.put(url+file_path,request_body,request_headers)
